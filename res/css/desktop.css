@@ -1,0 +1,64 @@
+/*
+ * Created on Wed Feb 22 2023
+ * Copyright (c) 2023 Connor Doman
+ */
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (min-width: 800px) {
+    header {
+        padding: 1em;
+    }
+    input[type="submit"] {
+        width: 30%;
+    }
+
+    #content {
+        font-size: 14pt;
+        width: 75%;
+        margin: 0 auto;
+        min-height: calc(100vh - 120px);
+        padding-bottom: 1.5em;
+    }
+
+    #logo {
+        font-size: 1em;
+        flex-basis: auto;
+    }
+
+    #logo .icon {
+        margin-right: 1em;
+    }
+
+    #logo a h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #search {
+        flex-basis: 50%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: initial;
+    }
+
+    footer .flex-row {
+        flex-basis: 75%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #content {
+        width: 50%;
+    }
+
+    footer .flex-row {
+        flex-basis: 50%;
+    }
+}

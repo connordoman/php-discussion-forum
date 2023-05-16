@@ -1,0 +1,10 @@
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /50x.php
+ErrorDocument 502 /50x.php
+ErrorDocument 503 /50x.php
+ErrorDocument 504 /50x.php
+<Files "prepare_database.sql">
+    Require all denied
+</Files>
+# php_flag display_errors 1
